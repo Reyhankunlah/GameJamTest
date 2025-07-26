@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialog
   m_EditorClassIdentifier: 
   npcName: npc
-  npcPotrait: {fileID: -2311659948842064771, guid: f495c2abb2d888944ae76c8f2571087b, type: 3}
+  npcPotrait: {fileID: 5191741401806974058, guid: 609b9a95422539d4987a052d25fa6cac, type: 3}
   dialogueLines:
   - TINUS KONTOL
   - dwada
