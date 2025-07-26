@@ -10,6 +10,10 @@ public class NPC : MonoBehaviour
     public Image avatarNPC;
     public TMP_Text txtNPCName;
     public TMP_Text txtDialogue;
+    
+    //Solid
+    [SerializeField] private AudioSource audioSc;
+
 
     private int dialogueIndex = 0;
     private bool isPlayerInRange = false;
@@ -47,6 +51,12 @@ public class NPC : MonoBehaviour
         txtNPCName.SetText(dialogueData.npcName);
         dialoguePanel.SetActive(true);
 
+        //Solid
+        if (audioSc != null && !audioSc.isPlaying)
+        {
+            audioSc.Play();
+        }
+        
         StartCoroutine(TypeLine());
     }
 
@@ -73,6 +83,12 @@ public class NPC : MonoBehaviour
         dialoguePanel.SetActive(false);
         isDialogueActive = false;
         isTyping = false;
+        
+        //Solid
+        if (audioSc != null && audioSc.isPlaying)
+        {
+            audioSc.Stop();
+        }
     }
 
     IEnumerator TypeLine()
