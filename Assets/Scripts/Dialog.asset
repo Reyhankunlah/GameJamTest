@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 310e9bfdfd388f54e8a87c2a9157cd80, type: 3}
+  m_Name: Dialog
+  m_EditorClassIdentifier: 
+  npcName: npc
+  npcPotrait: {fileID: -2311659948842064771, guid: f495c2abb2d888944ae76c8f2571087b, type: 3}
+  dialogueLines:
+  - TINUS KONTOL
+  - dwada
+  - ' daw da dad adaw d'
+  typingSpeed: 0.05
