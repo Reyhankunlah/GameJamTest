@@ -460,8 +460,9 @@ GameObject:
   - component: {fileID: 256249361}
   - component: {fileID: 256249360}
   - component: {fileID: 256249359}
-  - component: {fileID: 256249358}
   - component: {fileID: 256249357}
+  - component: {fileID: 256249363}
+  - component: {fileID: 256249364}
   m_Layer: 0
   m_Name: chestMimic
   m_TagString: Untagged
@@ -503,7 +504,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0029666424, y: -0.2254808}
+  m_Offset: {x: 0.045486808, y: -0.16733676}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -513,22 +514,8 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.8635249, y: 0.28795505}
+  m_Size: {x: 1.3480589, y: 1.1019708}
   m_EdgeRadius: 0
---- !u!114 &256249358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 256249356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e519fb63b7b8e054c9ee88b7c87fc0be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tandaSeru: {fileID: 2035579244}
-  chestAnimator: {fileID: 256249359}
 --- !u!95 &256249359
 Animator:
   serializedVersion: 7
@@ -585,7 +572,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0010650158, y: 0.034265935}
+  m_Offset: {x: 0.037699044, y: -0.14016616}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -595,7 +582,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.88254595, y: 0.84929645}
+  m_Size: {x: 1.4639868, y: 1.1981606}
   m_EdgeRadius: 0
 --- !u!212 &256249361
 SpriteRenderer:
@@ -668,6 +655,123 @@ Transform:
   - {fileID: 2035579246}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &256249363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256249356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ff330efd324f8940ad6822eeba53ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tandaSeru: {fileID: 2035579244}
+  chestAnimator: {fileID: 256249359}
+  dialogueData: {fileID: 11400000, guid: f0e6c39c0f9f90144b83433b95e19282, type: 2}
+  dialoguePanel: {fileID: 202042168}
+  avatarNPC: {fileID: 503303835}
+  txtNPCName: {fileID: 238098463}
+  txtDialogue: {fileID: 1399117882}
+  audioSc: {fileID: 256249364}
+--- !u!82 &256249364
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256249356}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 820f0ecf397be2c4bb579ee67ceb2ad6, type: 3}
+  m_Resource: {fileID: 8300000, guid: 820f0ecf397be2c4bb579ee67ceb2ad6, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &256396584
 GameObject:
   m_ObjectHideFlags: 0
@@ -1326,6 +1430,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1727650669}
         m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: OnPanelClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 256249363}
+        m_TargetAssemblyTypeName: Mimicchestopen, Assembly-CSharp
         m_MethodName: OnPanelClick
         m_Mode: 1
         m_Arguments:

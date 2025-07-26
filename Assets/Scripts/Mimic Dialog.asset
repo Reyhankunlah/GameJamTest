@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 310e9bfdfd388f54e8a87c2a9157cd80, type: 3}
-  m_Name: Coin Dialog
+  m_Name: Mimic Dialog
   m_EditorClassIdentifier: 
-  npcName: FazCoin
-  npcPotrait: {fileID: -8492266657062232804, guid: 1fba300e8aa5d994e8e517e5ad9435b4, type: 3}
+  npcName: The Mimic
+  npcPotrait: {fileID: -365533046, guid: dacbd60d1d3a0b044b9a698e71f5ab0f, type: 3}
   dialogueLines:
-  - I'm just a spinning coin....
-  - Owned by a purple skinned guy
-  typingSpeed: 0.05
+  - Rahh...! Im trying to sleep here!
+  - Listen kid, i'm just resting here... I have no interest on eating you.
+  - SO LEAVE ME ALONE!
+  - '*Sigh* SYBAU'
+  typingSpeed: 0.02
